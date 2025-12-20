@@ -30,6 +30,7 @@ textarea {
 	margin-bottom: 5px;
 	padding: 5px 8px;
 	margin-top: 5px;
+	min-height: 16px;
 }
 
 .agreement {
@@ -46,5 +47,6 @@ textarea {
 	height: 25px;
 	padding: auto;
 }
+
 
 

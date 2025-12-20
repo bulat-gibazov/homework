@@ -39,10 +39,11 @@ textarea {
 
 .button-send {
 	display: block;
-	border: white;
+	border: none;
 	border-radius: 5px;
 	cursor: pointer;
 	width: 80px;
 	height: 25px;
     padding: auto;
 }
+

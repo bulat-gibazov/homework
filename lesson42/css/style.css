@@ -21,6 +21,7 @@ h2 {
 
 textarea {
 	display: block;
+	font-family: sans-serif;
 	width: 200px;
 	resize: vertical;
 	max-height: 200px;
@@ -45,3 +46,4 @@ textarea {
 	height: 25px;
     padding: auto;
 }
+

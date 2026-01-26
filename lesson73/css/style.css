@@ -1,0 +1,145 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+
+.input {
+	border: 1px solid #000;
+	border-radius: 5px;
+	font-family: sans-serif;
+	max-width: 250px;
+	padding: 30px;
+}
+
+.title {
+	margin: 10px 0px;
+	font-size: 16px;
+}
+
+.input-user {
+	display: block;
+	border-radius: 5px;
+	margin: 10px 0px;
+	min-width: 300px;
+	border: 1px solid black;
+	padding: 5px 8px;
+}
+
+
+.input-user:focus,
+.input-text:focus,
+.button:focus,
+.button-send:focus,
+.agreement:focus + .agreement-label::before {
+    outline: none;
+}
+
+
+.input-user:focus-visible,
+.input-text:focus-visible,
+.button:focus-visible,
+.button-send:focus-visible,
+.agreement:focus-visible + .agreement-label::before{
+    outline: 2px solid #3300ff;
+    outline-offset: 1px;
+}
+
+.input-user:disabled,
+.input-text:disabled,
+.button:disabled {
+	border: #e5e5e5;
+	background-color: #e5e5e5;
+	cursor: default;
+}
+
+.button:disabled:hover {
+	background-color: #e5e5e5;
+	opacity: 1;
+}
+
+.input-text {
+	display: block;
+	font-family: sans-serif;
+	min-width: 300px;
+	resize: vertical;
+	max-height: 200px;
+	border-radius: 5px;
+	border: 1px solid black;
+	margin-bottom: 10px;
+	padding: 5px 8px;
+	margin-top: 5px;
+	min-height: 16px;
+}
+
+.agreement {
+	position: absolute;
+	opacity: 0;
+	width: 0;
+	height: 0;
+	bottom: 5px;
+	cursor: pointer;
+}
+
+.agreement-label {
+	position: relative;
+	display: inline-flex;
+	align-items: center;
+	cursor: pointer;
+	user-select: none;
+	padding-left: 28px;
+}
+
+.agreement-label::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 16px;
+	height: 16px;
+	border: 1px solid #111;
+	border-radius: 4px;
+	background-color: white;
+	background-image: url(../images/check-icon.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 10px;
+	transition: border-color 0.2s;
+}
+
+.agreement:checked + .agreement-label::before {
+	background-color: #3300ff;
+	border-color: #3300ff;
+}
+
+.agreement-label:hover::before {
+	border-color: #3300ff;
+}
+
+.button {
+	display: block;
+	background-color: #3300ff;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	min-width: 80px;
+	min-height: 25px;
+	margin-top: 10px;
+	padding: 5px;
+	transition: opacity 0.2s;
+}
+
+.button:hover {
+	opacity: 0.8;
+}
+
+.button:active {
+	background-color: #2904c0;
+}

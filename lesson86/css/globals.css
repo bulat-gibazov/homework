@@ -1,0 +1,97 @@
+html {
+	font-family: "Ubuntu", sans-serif;
+	font-weight: 400;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+a,
+button {
+	border: none;
+	outline: none;
+}
+
+button:not(:disabled):active {
+	background-color: #2d81cb;
+}
+
+a:focus-visible,
+button:focus-visible, summary:focus-visible {
+	outline: 2px solid #3596ed;
+	outline-offset: 2px;
+}
+
+.container {
+	max-width: 1250px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.section {
+	margin-bottom: 140px;
+}
+
+.title-medium,
+.title-large, .title-small {
+	margin-bottom: 40px;
+	font-family: "Oswald", sans-serif;
+	font-size: 36px;
+	font-weight: 600;
+	line-height: 115%;
+	text-transform: uppercase;
+	color: #2c332f;
+}
+
+.article-title {
+	max-width: 596px;
+}
+
+.title-large {
+	font-size: 48px;
+}
+
+.title-small {
+	font-weight: 500;
+	font-size: 24px;
+	margin-bottom: 0;
+}
+
+.text {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 130%;
+	color: #535755;
+}
+
+.text-sub {
+	font-weight: 300;
+	font-size: 14px;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+	text-align: right;
+	color: #858e8a;
+}
